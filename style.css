@@ -1,0 +1,11 @@
+/* give the input and translated text area width ad height */
+#from-text,
+#to-text {
+  height: 300px;
+  width: 100%;
+}
+
+/* give the icons a pointer cursor */
+.icon-controls > i {
+  cursor: pointer;
+}

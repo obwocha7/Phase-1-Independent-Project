@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link to bootstrap cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- link to bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous"
+    />
+    <!-- link to internal css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Your custom CSS file -->
+    <title>Language Translator</title>
+  </head>
+  <body>
+    <!-- creating a container to input content -->
+    <div class="container bg-dark">
+      <!-- Header Section -->
+      <div class="d-flex align-items-center mx-auto mt-2">
+        <h2 class="text-align-center text-warning mx-auto">
+          Language Translator App
+        </h2>
+      </div>
+      <!-- Translation Section -->
+      <div class="row justify-content-center">
+        <div class="col-md-8 card">
+          <div class="card-body">
+            <div class="row">
+              <!-- Input Text Area -->
+              <div class="col-6 bg-light">
+                <textarea id="from-text" placeholder="Text"></textarea>
+              </div>
+              <!-- Output Text Area -->
+              <div class="col-6 bg-light">
+                <textarea
+                  id="to-text"
+                  placeholder="Translation"
+                  readonly
+                ></textarea>
+              </div>
+              <!-- Language Selection and Control Icons -->
+              <div
+                class="col-12 justify-content-between d-flex align-items-center justify-content-between icon-controls"
+              >
+                <i id="from-copy" class="bi bi-copy text-dark"></i>
+                <i id="from-speak" class="bi bi-volume-up-fill text-dark"></i>
+                <select id="from-select" class="text-dark"></select>
+                <i id="exchange-languages" class="bi bi-arrow-left-right"></i>
+                <select id="to-select" class="text-dark"></select>
+                <i id="to-speak" class="bi bi-volume-up-fill text-dark"></i>
+                <i id="to-copy" class="bi bi-copy text-dark"></i>
+              </div>
+              <!-- Translate Button -->
+              <div
+                class="col-12 m-3 mx-auto d-flex align-items-center justify-content-center"
+              >
+                <button id="translate" class="btn btn-primary text-warning">
+                  Translate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- link to bootstrap js cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <!-- link to countries.js file -->
+    <script src="countries.js"></script>
+    <!-- File containing language codes and names -->
+    <!-- link to script.js -->
+    <script src="script.js"></script>
+    <!-- Your JavaScript file -->
+  </body>
+</html>
